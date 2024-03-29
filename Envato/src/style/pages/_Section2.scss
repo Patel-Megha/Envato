@@ -1,0 +1,85 @@
+.Section2_about {
+    width: 100%;
+    background-image: linear-gradient(90deg, #647dee 0%, #a754e2 100%);
+    @include largeScreen{
+        width: 100%;
+        height: 600px ;
+    }
+    .about_buycoin {
+        h1 {
+            font-weight: 500;
+            padding-top: 50px;
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            @include smallScreen{
+                font-size: 30px;
+            }
+        }
+    }
+    .about_para {
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        z-index: 1;
+        position: absolute;
+        margin-left: 12rem;
+        @include largeScreen{
+            width: 80%;
+        }
+        .paragraph {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            background-color: white;
+            height: 220px;
+            border-radius: 20px;
+            line-height: 25px;
+            @include smallScreen{
+                
+            }
+            &:before {
+                z-index: 2;
+                left: 20px;
+                right: 20px;
+                height: 10px;
+                bottom: -10px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                opacity: 0.2;
+                background-image: -moz-linear-gradient(-60deg, #647dee 0%, #a754e2 100%);
+                background-image: -webkit-linear-gradient(-60deg, #647dee 0%, #a754e2 100%);
+                background-image: -ms-linear-gradient(-60deg, #647dee 0%, #a754e2 100%);
+                background-image: linear-gradient(-60deg, #647dee 0%, #a754e2 100%);
+                border-radius: 0 0 10px 10px;
+                transition: 0.4s ease-in-out;
+            }
+            p {
+                width: 90%;
+                display: flex;
+                margin: auto;
+                align-items: center;
+                justify-content: center;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .bluetext {
+                
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    svg {
+        display: block;
+        z-index: 0;
+        position: relative;
+    }
+}

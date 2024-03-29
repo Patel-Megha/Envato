@@ -1,0 +1,97 @@
+.tempfeaturepage_sec{
+    height: 650px;
+    background: linear-gradient(90deg, rgba(100, 125, 238, 0.05) 0%, rgba(167, 84, 226, 0.05) 100%);
+
+    @include largeScreen{
+        height: 900px;
+    }
+    h1{
+        text-align: center;
+        font-size: 45px;
+        font-weight: 200;
+        padding: 100px 0 0 0;
+
+        @include smallScreen{
+            font-size: 35px;
+        }
+    }
+    .your_tagline{
+        text-align: center;
+        font-size: 25px;
+        color: blue;
+        padding: 20px 0 0 0;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 70px;
+            height: 3px;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 3px;
+            background-image: linear-gradient(90deg, #647dee 0%, #a754e2 100%);
+        }
+    }
+    .feature_para{
+        width: 40%;
+        margin: auto;
+        padding: 30px 0 0 0;
+        font-size: 18px;
+        line-height: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+
+        @include smallScreen{
+            width: 80%;
+        }
+    }
+    .second_para{
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 30px 0 0 0;
+        @include smallScreen{
+            width: 80%;
+        }
+    }
+    .third_para{
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 30px 0 50px 0;
+        @include smallScreen{
+            width: 80%;
+        }
+    }
+    button{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        border-radius: 20px;
+        background: linear-gradient(90deg, #647dee 0%, #a754e2 100%);
+        width: 180px;
+        border: none;
+        color: white;
+        font-size: 14px;
+        transition: 0.4s ease;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:hover {
+            background: linear-gradient(90deg, #a754e2 0%, #647dee 100%);
+            transition: 0.4s ease;
+            transition-property: color, background-color;
+        }
+    }
+}

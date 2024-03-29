@@ -1,0 +1,24 @@
+.cardsmainsec{
+    height: 300px;  
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    .images{
+        font-size: 50px;
+        color: rgb(87, 87, 203);
+    }
+    .heading{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+    .description{
+        margin: 15px 0px 0 0;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5rem;
+    }
+}

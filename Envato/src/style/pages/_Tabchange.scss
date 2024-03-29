@@ -1,0 +1,20 @@
+.tabchange_sec{
+    height: 1050px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    .tabchange_headings{
+        button{
+            font-size: 20px;
+            height: 40px;
+            width: 100px;
+            border: none;
+            @include smallScreen{
+                width: 70px;
+            }
+        }
+    }
+}

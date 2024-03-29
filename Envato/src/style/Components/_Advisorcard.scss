@@ -1,0 +1,23 @@
+.Advisorscard {
+    height: 380px;
+    width: 350px;
+    border: 2px solid rgb(108, 108, 250);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: linear-gradient(90deg, rgba(100, 125, 238, 0.05) 0%, rgba(167, 84, 226, 0.05) 100%);
+    .advisor_name {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px 0 10px 0;
+    }
+    .advisor_bio {
+        font-size: 20px;
+        color: rgb(158, 132, 249);
+    }
+    .advisor_profile {
+    }
+}

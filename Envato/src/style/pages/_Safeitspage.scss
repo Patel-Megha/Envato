@@ -1,0 +1,33 @@
+.safeitspagemain{
+    h1{
+        text-align: center;
+        padding: 50px 0 0 0;
+        font-size: 50px;
+        font-weight: 200;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 70px;
+            height: 3px;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 3px;
+            background-image: linear-gradient(90deg, #647dee 0%, #a754e2 100%);
+        }
+
+        @include smallScreen{
+            font-size: 40px;
+        }
+    }   
+    .safecards{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        @include largeScreen{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

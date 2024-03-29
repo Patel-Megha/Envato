@@ -1,0 +1,48 @@
+.Getstartedsec {
+    // height: 450px;
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 500;
+        @include smallScreen{
+            font-size: 30px;
+
+        }
+    }
+    .buyoinpara {
+        margin-top: 20px;
+        text-align: center;
+        color: blue;
+        font-size: 25px;
+        margin-bottom: 50px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 70px;
+            height: 3px;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 3px;
+            background-image: linear-gradient(90deg, #647dee 0%, #a754e2 100%);
+        }
+        @include smallScreen{
+            font-size: 20px;
+        }
+    }
+    .threedivs {
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        width: 70%;
+        gap: 20px;
+
+        @include largeScreen{
+            width: 90%;
+            gap: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

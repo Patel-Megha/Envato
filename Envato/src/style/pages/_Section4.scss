@@ -1,0 +1,32 @@
+.section4main{
+    height: 450px;
+    .container{
+        // text-align: center;
+        border-radius: 20px;
+        border: 2px solid blue;
+        width: 350px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 50px;
+        background: linear-gradient(90deg, rgba(100, 125, 238, 0.05) 0%, rgba(167, 84, 226, 0.05) 100%);
+       
+        .containerlinks{
+            margin: auto;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+    }
+    .BTCsection{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        border: 2px solid rgb(145, 145, 246);
+        border-radius: 20px;
+        background: linear-gradient(90deg, rgba(100, 125, 238, 0.05) 0%, rgba(167, 84, 226, 0.05) 100%);
+    }
+}
