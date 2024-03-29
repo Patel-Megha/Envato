@@ -104,6 +104,18 @@ html {
     height: 25px;
   }
 }
+@media (max-width: 1600px) {
+  .Navbar_main .menu_btn {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .Navbar_main .menu_btn {
+    display: block;
+    color: white;
+    font-size: 2rem;
+  }
+}
 
 .colorchange {
   z-index: 2;
@@ -675,6 +687,7 @@ html {
 }
 @media (max-width: 992px) {
   .roadmap_section {
+    width: 100%;
     height: 1000px;
   }
 }
@@ -1118,18 +1131,20 @@ html {
 }
 @media (max-width: 576px) {
   .count_section .text_section .one p {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
-.advisor_section {
-  height: 700px;
-}
 .advisor_section h1 {
   text-align: center;
   font-size: 45px;
   font-weight: 300;
   padding: 50px 0 0 0;
+}
+@media (max-width: 576px) {
+  .advisor_section h1 {
+    font-size: 40px;
+  }
 }
 .advisor_section .advisor_text {
   font-family: Arial, Helvetica, sans-serif;
@@ -1152,12 +1167,26 @@ html {
   border-radius: 3px;
   background-image: linear-gradient(90deg, #647dee 0%, #a754e2 100%);
 }
+@media (max-width: 576px) {
+  .advisor_section .advisor_text {
+    width: 90%;
+    font-size: 15px;
+    line-height: 1.4rem;
+  }
+}
 .advisor_section .profilecards {
   display: flex;
   width: 70%;
   margin: auto;
   gap: 30px;
   padding: 30px 0 0 0;
+}
+@media (max-width: 992px) {
+  .advisor_section .profilecards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .Advisorscard {
@@ -1186,6 +1215,11 @@ html {
   font-size: 50px;
   font-weight: 200;
 }
+@media (max-width: 768px) {
+  .ourteam_section h1 {
+    font-size: 40px;
+  }
+}
 .ourteam_section .ourteam_para {
   width: 50%;
   margin: auto;
@@ -1195,11 +1229,23 @@ html {
   padding: 25px;
   line-height: 1.8rem;
 }
+@media (max-width: 768px) {
+  .ourteam_section .ourteam_para {
+    width: 90%;
+    line-height: 1.5rem;
+  }
+}
 .ourteam_section .team_cards {
   width: 70%;
   margin: auto;
   display: flex;
   gap: 30px;
+}
+@media (max-width: 992px) {
+  .ourteam_section .team_cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .ourteam_section .team_cards .member1_card {
   width: 250px;
@@ -1212,6 +1258,11 @@ html {
   border: 2px solid rgb(125, 125, 250);
   border-radius: 20px;
   background: linear-gradient(90deg, rgba(100, 125, 238, 0.05) 0%, rgba(167, 84, 226, 0.05) 100%);
+}
+@media (max-width: 992px) {
+  .ourteam_section .team_cards .member1_card {
+    width: 300px;
+  }
 }
 .ourteam_section .team_cards .member1_card ul {
   display: flex;
@@ -1240,13 +1291,18 @@ html {
 }
 
 .tabchange_sec {
-  height: 1050px;
+  height: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+@media (max-width: 576px) {
+  .tabchange_sec {
+    height: 1150px;
+  }
 }
 .tabchange_sec .tabchange_headings button {
   font-size: 20px;
@@ -1265,7 +1321,7 @@ html {
   margin: auto;
   padding: 20px;
 }
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .content1_sec {
     height: 100svh;
     display: flex;
@@ -1331,12 +1387,23 @@ html {
   font-size: 45px;
   font-weight: 200;
 }
+@media (max-width: 576px) {
+  .faq_section h1 {
+    font-size: 40px;
+  }
+}
 .faq_section .faq_para {
   text-align: center;
   font-size: 20px;
   width: 50%;
   margin: auto;
   padding: 20px;
+}
+@media (max-width: 576px) {
+  .faq_section .faq_para {
+    font-size: 17px;
+    width: 90%;
+  }
 }
 .faq_section .faq_b {
   display: flex;
@@ -1345,13 +1412,13 @@ html {
   margin: auto;
   width: 80%;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .faq_section .faq_b .faq_buttons {
   border: 2px solid #647dee;
   border-radius: 20px;
 }
-.faq_section .faq_b .faq_buttons p {
+.faq_section .faq_b .faq_buttons .pa {
   font-size: 17px;
   width: 450px;
   height: 100px;
@@ -1360,6 +1427,20 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  transition: 0.4s ease;
+}
+.faq_section .faq_b .faq_buttons .pa.show {
+  animation: ani 1s ease;
+}
+@keyframes ani {
+  100% {
+    top: 0%;
+  }
+}
+@media (max-width: 576px) {
+  .faq_section .faq_b .faq_buttons .pa {
+    width: 350px;
+  }
 }
 .faq_section .faq_b .faq_buttons button {
   font-size: 15px;
@@ -1373,6 +1454,12 @@ html {
   justify-content: space-between;
   background-color: white;
 }
+@media (max-width: 576px) {
+  .faq_section .faq_b .faq_buttons button {
+    width: 350px;
+    font-size: 14px;
+  }
+}
 .faq_section .faq_b .faq_buttons button span {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0 0 0 10px;
@@ -1381,13 +1468,24 @@ html {
   margin-right: 20px;
   color: #647dee;
   font-size: 20px;
+  transform: rotate(0deg);
+  transition: 0.3s ease;
 }
-
-.show {
-  animation: rotate 0.4s ease;
+.faq_section .faq_b .faq_buttons button .plus_icon.show {
+  transform: rotate(90deg);
 }
-@keyframes rotate {
-  100% {
-    transform: rotate(180deg);
-  }
+.faq_section .faq_b .faq_buttons button .plus_icon.para2 {
+  transform: rotate(90deg);
+}
+.faq_section .faq_b .faq_buttons button .plus_icon.para3 {
+  transform: rotate(90deg);
+}
+.faq_section .faq_b .faq_buttons button .plus_icon.para4 {
+  transform: rotate(90deg);
+}
+.faq_section .faq_b .faq_buttons button .plus_icon.para5 {
+  transform: rotate(90deg);
+}
+.faq_section .faq_b .faq_buttons button .plus_icon.para6 {
+  transform: rotate(90deg);
 }/*# sourceMappingURL=index.css.map */

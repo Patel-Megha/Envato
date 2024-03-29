@@ -5,6 +5,9 @@
         text-align: center;
         font-size: 45px;
         font-weight: 200;
+        @include smallScreen {
+            font-size: 40px;
+        }
     }
     .faq_para {
         text-align: center;
@@ -12,6 +15,10 @@
         width: 50%;
         margin: auto;
         padding: 20px;
+        @include smallScreen{
+            font-size: 17px;
+            width: 90%;
+        }
     }
     .faq_b {
         display: flex;
@@ -20,12 +27,11 @@
         margin: auto;
         width: 80%;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         .faq_buttons {
             border: 2px solid #647dee;
             border-radius: 20px;
-
-            p {
+            .pa {
                 font-size: 17px;
                 width: 450px;
                 height: 100px;
@@ -34,6 +40,18 @@
                 align-items: center;
                 justify-content: space-between;
                 padding: 10px;
+                transition: 0.4s ease;
+                &.show {
+                    animation: ani 1s ease;
+                    @keyframes ani {
+                        100%{
+                            top: 0%;
+                        }
+                    }
+                }
+                @include smallScreen{
+                    width: 350px;
+                }
             }
             button {
                 font-size: 15px;
@@ -47,6 +65,10 @@
                 align-items: center;
                 justify-content: space-between;
                 background-color: white;
+                @include smallScreen{
+                    width: 350px;
+                    font-size: 14px;
+                }
                 span {
                     font-family: Arial, Helvetica, sans-serif;
                     padding: 0 0 0 10px;
@@ -55,24 +77,28 @@
                     margin-right: 20px;
                     color: #647dee;
                     font-size: 20px;
+                    transform: rotate(0deg);
+                    transition: 0.3s ease;
+                    &.show {
+                        transform: rotate(90deg);
+                    }
+                    &.para2 {
+                        transform: rotate(90deg);
+                    } 
+                    &.para3 {
+                        transform: rotate(90deg);
+                    }
+                    &.para4 {
+                        transform: rotate(90deg);
+                    }
+                    &.para5 {
+                        transform: rotate(90deg);
+                    }
+                    &.para6 {
+                        transform: rotate(90deg);
+                    }
                 }
             }
         }
     }
 }
-.show {
-    animation: rotate 0.4s ease;
-    @keyframes rotate {
-        100% { 
-            transform: rotate(180deg);
-        }
-    }
-}
-// .hide{
-//     animation: rotate 0.4s ease;
-//     @keyframes rotate {
-//         100% { 
-//             transform: rotate(180deg);
-//         }
-//     }
-// }

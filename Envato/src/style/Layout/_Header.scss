@@ -75,6 +75,17 @@
             }
         }
     }
+    .menu_btn{
+        @include doubleExtraBigScreen{
+            display: none;
+        }
+
+        @include largeScreen{
+            display: block;
+            color: white;
+            font-size: 2rem;
+        }
+    }
 }
 .colorchange {
     z-index: 2;

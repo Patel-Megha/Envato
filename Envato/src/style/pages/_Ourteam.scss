@@ -3,6 +3,10 @@
         text-align: center;
         font-size: 50px;
         font-weight: 200;
+
+        @include mediumScreen{
+            font-size:40px;
+        }
     }
     .ourteam_para {
         width: 50%;
@@ -12,12 +16,21 @@
         font-family: Arial, Helvetica, sans-serif;
         padding: 25px;
         line-height: 1.8rem;
+        @include mediumScreen{
+            width: 90%;
+            line-height: 1.5rem;
+        }
     }
     .team_cards {
         width: 70%;
         margin: auto;
         display: flex;
         gap: 30px;  
+
+        @include largeScreen{
+            display: flex;
+            flex-wrap: wrap;
+        }
         .member1_card {
             width: 250px;
             height: 300px;
@@ -29,6 +42,9 @@
             border: 2px solid rgb(125, 125, 250);
             border-radius: 20px;
             background: linear-gradient(90deg, rgba(100, 125, 238, 0.05) 0%, rgba(167, 84, 226, 0.05) 100%);
+            @include largeScreen{
+                width: 300px;
+            }
             ul {
                 // display: none;
                 display: flex;
