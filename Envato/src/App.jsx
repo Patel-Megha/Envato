@@ -15,6 +15,8 @@ import Ourteam from './pages/Ourteam'
 import Tabchange from './pages/Tabchange'
 import Faqsec from './pages/Faqsec'
 import Getintouch from './pages/Getintouch'
+import Icons from './pages/Icons'
+import Footer from './Layout/Footer'
 
 const App = () => {
   return (
@@ -34,6 +36,8 @@ const App = () => {
       <Ourteam/>
      <Faqsec/>
      <Getintouch/>
+     <Icons/>
+     <Footer/>
     </div>
   )
 }

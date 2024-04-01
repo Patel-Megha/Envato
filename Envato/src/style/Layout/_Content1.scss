@@ -1,13 +1,11 @@
 .content1_sec {
     display: flex;
     margin: auto;
-    
-    padding: 20px;
-
-    @include smallScreen{
-        height: 100svh;
+    padding: 40px;
+    @include largeScreen{
         display: flex;
         flex-wrap: wrap;
+        gap: 20px;
     }
     .content_cards {
         margin: auto;

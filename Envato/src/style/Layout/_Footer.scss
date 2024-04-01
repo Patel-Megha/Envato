@@ -1,0 +1,58 @@
+.footer_sec {
+    height: 320px;
+    background-color: #212121;
+    text-align: center;
+    h1 {
+        color: white;
+        font-size: 40px;
+        font-weight: 200;
+        padding: 20px;
+        @include smallScreen {
+            font-size: 30px;
+        }
+    }
+    .input {
+        padding: 20px;
+        position: relative;
+        input {
+            width: 350px;
+            height: 40px;
+            border-radius: 20px;
+            background: linear-gradient(90deg, rgba(100, 125, 238, 0.15) 0%, rgba(167, 84, 226, 0.15) 100%);
+            border: none;
+            color: white;
+            padding: 10px;
+            &::placeholder {
+                font-size: 15px;
+                color: white;
+            }
+            @include smallScreen{
+                height: 45px;
+            }
+        }
+        .send_icon {
+            position: absolute;
+            color: white;
+            font-size: 40px;
+            top: 0;
+            right: 600px;
+            padding-top: 20px;
+        }
+    }
+    .insta_icons {
+        width: 20%;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding: 40px;
+        @include smallScreen{
+            width: 60%;
+        }
+    }
+    p {
+        color: white;
+        font-size: 16px;
+    }
+}

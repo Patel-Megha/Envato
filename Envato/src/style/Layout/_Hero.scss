@@ -2,36 +2,39 @@
     width: 80%;
     display: flex;
     margin: auto;
-    height: 100svh;
-
-    @include largeScreen{
+    height: 800px;
+    @include largeScreen {
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 100svh;
     }
     .Hero_first_Buycoin {
         width: 50%;
         margin: auto;
         justify-content: center;
         line-height: 4rem;
-        @include smallScreen{
+        @include largeScreen {
             line-height: 3rem;
-            padding-top: 50px;
+            padding: 130px 0 0 0;
+            width: 100%;
+            margin: auto;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .buycointext {
             font-size: 65px;
             color: white;
-            @include smallScreen{
+            @include smallScreen {
                 font-size: 40px;
             }
         }
         p {
             font-size: 30px;
             color: white;
-            @include smallScreen{
+            @include smallScreen {
                 font-size: 25px;
-
             }
         }
         .hero_buttons {
@@ -71,16 +74,16 @@
                 }
             }
         }
-        @include largeScreen{
-            width: 100%;
+        @include largeScreen {
+            width: 90%;
             margin: auto;
             justify-content: center;
-            .hero_buttons{
-                .getstarted{
-                    width:180px ;
+            .hero_buttons {
+                .getstarted {
+                    width: 180px;
                     font-size: 17px;
                 }
-                .whitepaper{
+                .whitepaper {
                     font-size: 17px;
                     width: 180px;
                 }
@@ -93,10 +96,10 @@
         display: flex;
         justify-content: center;
         margin: auto;
-        
-        @include largeScreen{
+
+        @include largeScreen {
             width: 100%;
-            
+            padding: 100px 0 0 0;
         }
         .hero_form {
             margin: auto;
@@ -109,15 +112,17 @@
             width: 450px;
             border-radius: 20px;
             line-height: 3.5rem;
-
-            @include smallScreen{
-                height: 350px;
+            @include smallScreen {
+                height: 330px;
+            }
+            @include largeScreen {
+                height: 360px;
             }
             .hero_heading {
                 h1 {
                     font-size: 40px;
                     letter-spacing: 4px;
-                    @include smallScreen{
+                    @include smallScreen {
                         font-size: 25px;
                     }
                 }
@@ -134,7 +139,7 @@
                 border-radius: 20px;
                 border: 2px solid #647dee;
 
-                @include smallScreen{
+                @include smallScreen {
                     width: 250px;
                 }
                 .progress_bar {
@@ -167,7 +172,7 @@
                         }
                     }
 
-                    @include smallScreen{
+                    @include smallScreen {
                         width: 170px;
                     }
                 }
@@ -186,7 +191,7 @@
                         font-size: 15px;
                         font-weight: 200;
 
-                        @include smallScreen{
+                        @include smallScreen {
                             font-size: 13px;
                         }
                     }
@@ -205,7 +210,7 @@
                 &:hover {
                     background: linear-gradient(90deg, #a754e2 0%, #647dee 100%);
                 }
-                @include smallScreen{
+                @include smallScreen {
                     padding: 10px;
                     font-size: 15px;
                 }

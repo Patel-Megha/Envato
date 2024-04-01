@@ -1,13 +1,18 @@
 .tabchange_sec{
-    height: 500px;
+    // height: 500px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
+    padding: 80px 0 30px 0;
     @include smallScreen{
         height: 1150px;
+    }
+    @include largeScreen{
+        padding: 150px 0 0 0;
+        
     }
     .tabchange_headings{
         button{

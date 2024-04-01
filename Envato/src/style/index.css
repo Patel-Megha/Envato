@@ -24,12 +24,11 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 90px;
   justify-content: space-between;
   font-size: 20px;
   color: white;
   position: fixed;
-  z-index: 2;
+  z-index: 99;
 }
 .Navbar_main .navbar_logo {
   padding: 0 0 0 90px;
@@ -68,11 +67,35 @@ html {
     display: none;
   }
 }
+.Navbar_main .navbar_features.showmenu {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  position: inherit;
+  top: 60px;
+  width: 100%;
+  transition: 1s ease;
+  animation: sidebar 1s ease;
+}
+@keyframes sidebar {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+.Navbar_main .navbar_features.showmenu .links {
+  color: white;
+  justify-content: flex-start;
+  display: flex;
+}
 .Navbar_main .nav_signupbutton {
   padding: 0 50px;
 }
 @media (max-width: 992px) {
   .Navbar_main .nav_signupbutton {
+    display: none;
     padding: 5px;
   }
 }
@@ -88,7 +111,7 @@ html {
   padding: 23px;
   border: none;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   transition: 0.4s ease;
   text-transform: uppercase;
   cursor: pointer;
@@ -118,7 +141,8 @@ html {
 }
 
 .colorchange {
-  z-index: 2;
+  position: fixed;
+  z-index: 10;
   top: 0;
   background-color: white;
   width: 100%;
@@ -131,23 +155,28 @@ html {
   0% {
     top: 0%;
   }
+  100% {
+    top: 1%;
+  }
 }
 .colorchange .navbar_features .links {
   color: #000;
+}
+.colorchange .menu_btn {
+  color: black;
 }
 
 .Heroseection_main {
   width: 80%;
   display: flex;
   margin: auto;
-  height: 100svh;
+  height: 800px;
 }
 @media (max-width: 992px) {
   .Heroseection_main {
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 100svh;
   }
 }
 .Heroseection_main .Hero_first_Buycoin {
@@ -156,10 +185,16 @@ html {
   justify-content: center;
   line-height: 4rem;
 }
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .Heroseection_main .Hero_first_Buycoin {
     line-height: 3rem;
-    padding-top: 50px;
+    padding: 130px 0 0 0;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .Heroseection_main .Hero_first_Buycoin .buycointext {
@@ -217,7 +252,7 @@ html {
 }
 @media (max-width: 992px) {
   .Heroseection_main .Hero_first_Buycoin {
-    width: 100%;
+    width: 90%;
     margin: auto;
     justify-content: center;
   }
@@ -240,6 +275,7 @@ html {
 @media (max-width: 992px) {
   .Heroseection_main .Hero_twobuycoin_ico {
     width: 100%;
+    padding: 100px 0 0 0;
   }
 }
 .Heroseection_main .Hero_twobuycoin_ico .hero_form {
@@ -256,7 +292,12 @@ html {
 }
 @media (max-width: 576px) {
   .Heroseection_main .Hero_twobuycoin_ico .hero_form {
-    height: 350px;
+    height: 330px;
+  }
+}
+@media (max-width: 992px) {
+  .Heroseection_main .Hero_twobuycoin_ico .hero_form {
+    height: 360px;
   }
 }
 .Heroseection_main .Hero_twobuycoin_ico .hero_form .hero_heading h1 {
@@ -360,13 +401,13 @@ html {
 
 .sectiononemain {
   position: relative;
-  height: 100svh;
+  height: 800px;
   width: 100%;
   z-index: 1;
 }
 .sectiononemain .sectiononegradient {
   width: 100%;
-  height: 100svh;
+  height: 800px;
   opacity: 0.4;
   z-index: -1;
   position: absolute;
@@ -374,17 +415,16 @@ html {
 }
 .sectiononemain .main_home {
   width: 100%;
-  height: 100svh;
+  height: 800px;
 }
 
 .Section2_about {
   width: 100%;
   background-image: linear-gradient(90deg, #647dee 0%, #a754e2 100%);
 }
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .Section2_about {
     width: 100%;
-    height: 600px;
   }
 }
 .Section2_about .about_buycoin h1 {
@@ -411,7 +451,8 @@ html {
 }
 @media (max-width: 992px) {
   .Section2_about .about_para {
-    width: 80%;
+    width: 90%;
+    margin-left: 20px;
   }
 }
 .Section2_about .about_para .paragraph {
@@ -424,6 +465,11 @@ html {
   height: 220px;
   border-radius: 20px;
   line-height: 25px;
+}
+@media (max-width: 576px) {
+  .Section2_about .about_para .paragraph {
+    height: 340px;
+  }
 }
 .Section2_about .about_para .paragraph:before {
   z-index: 2;
@@ -450,6 +496,11 @@ html {
   font-size: 17px;
   font-family: Arial, Helvetica, sans-serif;
 }
+@media (max-width: 576px) {
+  .Section2_about .about_para .paragraph p {
+    font-size: 15px;
+  }
+}
 .Section2_about .about_para .paragraph .bluetext {
   justify-content: center;
   align-items: center;
@@ -458,6 +509,11 @@ html {
   display: block;
   z-index: 0;
   position: relative;
+}
+@media (max-width: 576px) {
+  .Section2_about svg {
+    height: 400px;
+  }
 }
 
 .cardsmain {
@@ -496,6 +552,9 @@ html {
   background-image: linear-gradient(90deg, #647dee 0%, #a754e2 100%);
 }
 
+.Getstartedsec {
+  padding: 50px 0 30px 0;
+}
 .Getstartedsec h1 {
   text-align: center;
   font-size: 50px;
@@ -504,6 +563,11 @@ html {
 @media (max-width: 576px) {
   .Getstartedsec h1 {
     font-size: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .Getstartedsec h1 {
+    padding: 40px 0 0 0;
   }
 }
 .Getstartedsec .buyoinpara {
@@ -537,9 +601,8 @@ html {
   width: 70%;
   gap: 20px;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .Getstartedsec .threedivs {
-    width: 90%;
     gap: 50px;
     display: flex;
     flex-direction: column;
@@ -963,6 +1026,7 @@ html {
   .safeitspagemain .safecards {
     display: flex;
     flex-direction: column;
+    width: 90%;
   }
 }
 
@@ -1214,6 +1278,7 @@ html {
   text-align: center;
   font-size: 50px;
   font-weight: 200;
+  padding: 50px 0 0 0;
 }
 @media (max-width: 768px) {
   .ourteam_section h1 {
@@ -1291,17 +1356,22 @@ html {
 }
 
 .tabchange_sec {
-  height: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding: 80px 0 30px 0;
 }
 @media (max-width: 576px) {
   .tabchange_sec {
     height: 1150px;
+  }
+}
+@media (max-width: 992px) {
+  .tabchange_sec {
+    padding: 150px 0 0 0;
   }
 }
 .tabchange_sec .tabchange_headings button {
@@ -1319,13 +1389,13 @@ html {
 .content1_sec {
   display: flex;
   margin: auto;
-  padding: 20px;
+  padding: 40px;
 }
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .content1_sec {
-    height: 100svh;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
   }
 }
 .content1_sec .content_cards {
@@ -1379,7 +1449,6 @@ html {
 }
 
 .faq_section {
-  height: 600px;
   padding: 50px 0;
 }
 .faq_section h1 {
@@ -1408,7 +1477,7 @@ html {
 .faq_section .faq_b {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
   margin: auto;
   width: 80%;
   justify-content: center;
@@ -1420,7 +1489,7 @@ html {
 }
 .faq_section .faq_b .faq_buttons .pa {
   font-size: 17px;
-  width: 450px;
+  width: 500px;
   height: 100px;
   display: flex;
   margin: auto;
@@ -1490,14 +1559,16 @@ html {
   transform: rotate(90deg);
 }
 
-.getintouch_sec {
-  height: 100svh;
-}
 .getintouch_sec h1 {
   text-align: center;
   font-size: 45px;
   font-weight: 200;
   padding: 20px;
+}
+@media (max-width: 576px) {
+  .getintouch_sec h1 {
+    font-size: 35px;
+  }
 }
 .getintouch_sec .getin_firstpara {
   font-size: 20px;
@@ -1505,15 +1576,34 @@ html {
   margin: auto;
   text-align: center;
 }
+@media (max-width: 576px) {
+  .getintouch_sec .getin_firstpara {
+    width: 90%;
+    font-size: 18px;
+  }
+}
 .getintouch_sec .Get_main {
   padding: 50px 0 0 0;
   display: flex;
   width: 80%;
   margin: auto;
 }
+@media (max-width: 992px) {
+  .getintouch_sec .Get_main {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .getintouch_sec .Get_main .getintouch_first {
   margin: auto;
   width: 40%;
+}
+@media (max-width: 992px) {
+  .getintouch_sec .Get_main .getintouch_first {
+    width: 100%;
+  }
 }
 .getintouch_sec .Get_main .getintouch_first .first {
   justify-content: center;
@@ -1543,6 +1633,11 @@ html {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 576px) {
+  .getintouch_sec .Get_main .getintouch_second {
+    width: 100%;
+  }
+}
 .getintouch_sec .Get_main .getintouch_second input {
   width: 500px;
   height: 45px;
@@ -1558,6 +1653,11 @@ html {
 .getintouch_sec .Get_main .getintouch_second input::placeholder {
   font-size: 18px;
 }
+@media (max-width: 576px) {
+  .getintouch_sec .Get_main .getintouch_second input {
+    width: auto;
+  }
+}
 .getintouch_sec .Get_main .getintouch_second textarea {
   width: 500px;
   border-radius: 20px;
@@ -1572,6 +1672,11 @@ html {
 .getintouch_sec .Get_main .getintouch_second textarea::placeholder {
   font-size: 18px;
 }
+@media (max-width: 576px) {
+  .getintouch_sec .Get_main .getintouch_second textarea {
+    width: auto;
+  }
+}
 .getintouch_sec .Get_main .getintouch_second button {
   height: 45px;
   width: 150px;
@@ -1582,4 +1687,105 @@ html {
   border: none;
   margin: 10px;
   cursor: pointer;
+}
+
+.icons_div {
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+@media (max-width: 992px) {
+  .icons_div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.icons_div .videos_images {
+  width: 70%;
+  margin: auto;
+}
+@media (max-width: 992px) {
+  .icons_div .videos_images {
+    width: 100%;
+  }
+}
+.icons_div .videos_images img {
+  height: 40px;
+  margin: 1rem;
+}
+@media (max-width: 992px) {
+  .icons_div .videos_images img {
+    height: 27px;
+  }
+}
+
+.footer_sec {
+  height: 320px;
+  background-color: #212121;
+  text-align: center;
+}
+.footer_sec h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 200;
+  padding: 20px;
+}
+@media (max-width: 576px) {
+  .footer_sec h1 {
+    font-size: 30px;
+  }
+}
+.footer_sec .input {
+  padding: 20px;
+  position: relative;
+}
+.footer_sec .input input {
+  width: 350px;
+  height: 40px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, rgba(100, 125, 238, 0.15) 0%, rgba(167, 84, 226, 0.15) 100%);
+  border: none;
+  color: white;
+  padding: 10px;
+}
+.footer_sec .input input::-moz-placeholder {
+  font-size: 15px;
+  color: white;
+}
+.footer_sec .input input::placeholder {
+  font-size: 15px;
+  color: white;
+}
+@media (max-width: 576px) {
+  .footer_sec .input input {
+    height: 45px;
+  }
+}
+.footer_sec .input .send_icon {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  top: 0;
+  right: 600px;
+  padding-top: 20px;
+}
+.footer_sec .insta_icons {
+  width: 20%;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 40px;
+}
+@media (max-width: 576px) {
+  .footer_sec .insta_icons {
+    width: 60%;
+  }
+}
+.footer_sec p {
+  color: white;
+  font-size: 16px;
 }/*# sourceMappingURL=index.css.map */

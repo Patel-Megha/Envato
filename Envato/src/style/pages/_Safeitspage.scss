@@ -16,7 +16,6 @@
             border-radius: 3px;
             background-image: linear-gradient(90deg, #647dee 0%, #a754e2 100%);
         }
-
         @include smallScreen{
             font-size: 40px;
         }
@@ -28,6 +27,7 @@
         @include largeScreen{
             display: flex;
             flex-direction: column;
+            width: 90%;
         }
     }
 }

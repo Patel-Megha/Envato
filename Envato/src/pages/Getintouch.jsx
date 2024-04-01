@@ -5,7 +5,7 @@ import { CgMail } from "react-icons/cg";
 import { CiMobile2 } from "react-icons/ci";
 const Getintouch = () => {
     return (
-        <div className='getintouch_sec'>
+        <div className='getintouch_sec' id='getintouch'>
             <h1>Get in Touch</h1>
             <p className='getin_firstpara'>We are always open and we welcome and questions you have for our team. If you wish to get in touch, please fill out the form below.</p>
             <div className="Get_main">
