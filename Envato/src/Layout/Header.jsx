@@ -34,7 +34,6 @@ const Header = () => {
             <div className="nav_signupbutton">
                 <button>Sign In</button>
             </div>
-
         </div>
     )
 }

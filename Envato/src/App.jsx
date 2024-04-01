@@ -14,6 +14,7 @@ import Advisor from './pages/Advisor'
 import Ourteam from './pages/Ourteam'
 import Tabchange from './pages/Tabchange'
 import Faqsec from './pages/Faqsec'
+import Getintouch from './pages/Getintouch'
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
       <Advisor/>
       <Ourteam/>
      <Faqsec/>
+     <Getintouch/>
     </div>
   )
 }

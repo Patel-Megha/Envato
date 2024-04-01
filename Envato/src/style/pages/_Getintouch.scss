@@ -1,0 +1,91 @@
+.getintouch_sec {
+    height: 100svh;
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 200;
+        padding: 20px;
+    }
+    .getin_firstpara {
+        font-size: 20px;
+        width: 40%;
+        margin: auto;
+        text-align: center;
+    }
+    .Get_main {
+        padding: 50px 0 0 0;
+        display: flex;
+        width: 80%;
+        margin: auto;
+        .getintouch_first {
+            margin: auto;
+            width: 40%;
+            .first {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                margin: auto;
+                .icon {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    background: linear-gradient(90deg, #647dee 0%, #a754e2 100%);
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    color: white;
+                    font-size: 20px;
+                    // margin: auto;
+                    margin: 10px;
+                }
+                .icon_para {
+                    line-height: 1.4rem;
+                    font-size: 17px;
+                }
+            }
+        }
+        .getintouch_second {
+            margin: auto;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            input {
+                width: 500px;
+                height: 45px;
+                border-radius: 20px;
+                margin: 10px;
+                border: 2px solid #647dee;
+                padding: 0 0 0 15px;
+                font-size: 18px;
+
+                &::placeholder {
+                    font-size: 18px;
+                }
+            }
+            textarea {
+                width: 500px;
+                // height: 40px;
+                border-radius: 20px;
+                border: 2px solid #647dee;
+                margin: 10px;
+                padding: 10px 0 0 15px;
+                font-size: 18px;
+                &::placeholder {
+                    font-size: 18px;
+                    // padding: 20px;
+                }
+            }
+            button {
+                height: 45px;
+                width: 150px;
+                background: linear-gradient(90deg, #647dee 0%, #a754e2 100%);
+                border-radius: 20px;
+                color: white;
+                font-size: 18px;
+                border: none;
+                margin: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
