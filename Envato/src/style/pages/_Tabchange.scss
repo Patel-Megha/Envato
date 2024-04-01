@@ -7,19 +7,27 @@
     align-items: center;
     margin: auto;
     padding: 80px 0 30px 0;
+    border-radius: 10px;
     @include smallScreen{
         height: 1150px;
     }
     @include largeScreen{
         padding: 150px 0 0 0;
-        
+
     }
     .tabchange_headings{
         button{
+
             font-size: 20px;
             height: 40px;
             width: 100px;
             border: none;
+            &:nth-child(1){
+                border-radius: 20px 0 0 20px;
+            }
+            &:last-child{
+                border-radius: 0 20px 20px 0;
+            }
             @include smallScreen{
                 width: 70px;
             }

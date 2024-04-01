@@ -257,12 +257,12 @@ html {
     justify-content: center;
   }
   .Heroseection_main .Hero_first_Buycoin .hero_buttons .getstarted {
-    width: 180px;
+    width: 150px;
     font-size: 17px;
   }
   .Heroseection_main .Hero_first_Buycoin .hero_buttons .whitepaper {
     font-size: 17px;
-    width: 180px;
+    width: 150px;
   }
 }
 .Heroseection_main .Hero_twobuycoin_ico {
@@ -297,7 +297,7 @@ html {
 }
 @media (max-width: 992px) {
   .Heroseection_main .Hero_twobuycoin_ico .hero_form {
-    height: 360px;
+    height: 320px;
   }
 }
 .Heroseection_main .Hero_twobuycoin_ico .hero_form .hero_heading h1 {
@@ -603,6 +603,7 @@ html {
 }
 @media (max-width: 768px) {
   .Getstartedsec .threedivs {
+    width: 90%;
     gap: 50px;
     display: flex;
     flex-direction: column;
@@ -1300,6 +1301,9 @@ html {
     line-height: 1.5rem;
   }
 }
+.ourteam_section .hide {
+  display: none;
+}
 .ourteam_section .team_cards {
   width: 70%;
   margin: auto;
@@ -1328,6 +1332,10 @@ html {
   .ourteam_section .team_cards .member1_card {
     width: 300px;
   }
+}
+.ourteam_section .team_cards .member1_card:hover + .hide {
+  display: block;
+  color: black;
 }
 .ourteam_section .team_cards .member1_card ul {
   display: flex;
@@ -1363,6 +1371,7 @@ html {
   align-items: center;
   margin: auto;
   padding: 80px 0 30px 0;
+  border-radius: 10px;
 }
 @media (max-width: 576px) {
   .tabchange_sec {
@@ -1379,6 +1388,12 @@ html {
   height: 40px;
   width: 100px;
   border: none;
+}
+.tabchange_sec .tabchange_headings button:nth-child(1) {
+  border-radius: 20px 0 0 20px;
+}
+.tabchange_sec .tabchange_headings button:last-child {
+  border-radius: 0 20px 20px 0;
 }
 @media (max-width: 576px) {
   .tabchange_sec .tabchange_headings button {

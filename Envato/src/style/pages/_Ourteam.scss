@@ -4,8 +4,8 @@
         font-size: 50px;
         font-weight: 200;
         padding: 50px 0 0 0;
-        @include mediumScreen{
-            font-size:40px;
+        @include mediumScreen {
+            font-size: 40px;
         }
     }
     .ourteam_para {
@@ -16,18 +16,21 @@
         font-family: Arial, Helvetica, sans-serif;
         padding: 25px;
         line-height: 1.8rem;
-        @include mediumScreen{
+        @include mediumScreen {
             width: 90%;
             line-height: 1.5rem;
         }
+    }
+    .hide {
+        display: none;
     }
     .team_cards {
         width: 70%;
         margin: auto;
         display: flex;
-        gap: 30px;  
+        gap: 30px;
 
-        @include largeScreen{
+        @include largeScreen {
             display: flex;
             flex-wrap: wrap;
         }
@@ -42,40 +45,48 @@
             border: 2px solid rgb(125, 125, 250);
             border-radius: 20px;
             background: linear-gradient(90deg, rgba(100, 125, 238, 0.05) 0%, rgba(167, 84, 226, 0.05) 100%);
-            @include largeScreen{
+            @include largeScreen {
                 width: 300px;
             }
+            &:hover {
+                + {
+                    .hide {
+                        display: block;
+                        color: black;
+                    }
+                }
+            }
+
             ul {
                 // display: none;
                 display: flex;
-                flex-direction: row;    
+                flex-direction: row;
                 margin: auto;
                 // opacity: 0;
-                    //  &:hover{
-                    //     display: flex;
-                    //  }
-                    .instagram{
-                        color: rgb(251, 120, 142);
-                        list-style-type: none;
-                        padding: 10px;
-                    }
-                    .linkedin{
-                        color: rgb(146, 146, 246);
-                        list-style-type: none;
-                        padding: 10px;
-                    }
-                    .facebook{
-                        list-style-type: none;
-                        color: rgb(67, 67, 253);
-                        padding: 10px;
-                    }
-                    .twitter{
-                        list-style-type: none;
-                        color: blueviolet;
-                        padding: 10px;
-                    }
+                //  &:hover{
+                //     display: flex;
+                //  }
+                .instagram {
+                    color: rgb(251, 120, 142);
+                    list-style-type: none;
+                    padding: 10px;
+                }
+                .linkedin {
+                    color: rgb(146, 146, 246);
+                    list-style-type: none;
+                    padding: 10px;
+                }
+                .facebook {
+                    list-style-type: none;
+                    color: rgb(67, 67, 253);
+                    padding: 10px;
+                }
+                .twitter {
+                    list-style-type: none;
+                    color: blueviolet;
+                    padding: 10px;
                 }
             }
         }
     }
-
+}
