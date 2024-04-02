@@ -8,9 +8,10 @@
         @include smallScreen{
             font-size: 30px;
         }
-        @include largeScreen{
-            padding: 40px 0 0 0;
-        }
+        // @include largeScreen{
+        //     padding: 0px 0 0 0;
+
+        // }
     }
     .buyoinpara {
         margin-top: 20px;

@@ -9,7 +9,7 @@
     font-size: 20px;
     color: white;
     position: fixed;
-    z-index: 99;
+    z-index: 10;
     .navbar_logo {
         padding: 0 0 0 90px;
         @include largeScreen {
@@ -118,7 +118,7 @@
 }
 .colorchange {
     position: fixed;
-    z-index: 10;
+    z-index: 7;
     top: 0;
     background-color: white;
     width: 100%;

@@ -28,7 +28,7 @@ html {
   font-size: 20px;
   color: white;
   position: fixed;
-  z-index: 99;
+  z-index: 10;
 }
 .Navbar_main .navbar_logo {
   padding: 0 0 0 90px;
@@ -142,7 +142,7 @@ html {
 
 .colorchange {
   position: fixed;
-  z-index: 10;
+  z-index: 7;
   top: 0;
   background-color: white;
   width: 100%;
@@ -467,27 +467,12 @@ html {
   height: 220px;
   border-radius: 20px;
   line-height: 25px;
+  box-shadow: rgba(175, 187, 243, 0.4) 0px 5px, rgba(245, 199, 228, 0.3) 0px 10px, rgba(163, 128, 252, 0.2) 0px 15px;
 }
 @media (max-width: 576px) {
   .Section2_about .about_para .paragraph {
     height: 340px;
   }
-}
-.Section2_about .about_para .paragraph:before {
-  z-index: 2;
-  left: 20px;
-  right: 20px;
-  height: 10px;
-  bottom: -10px;
-}
-.Section2_about .about_para .paragraph::before {
-  content: "";
-  position: absolute;
-  display: block;
-  opacity: 0.2;
-  background-image: linear-gradient(-60deg, #647dee 0%, #a754e2 100%);
-  border-radius: 0 0 10px 10px;
-  transition: 0.4s ease-in-out;
 }
 .Section2_about .about_para .paragraph p {
   width: 90%;
@@ -565,11 +550,6 @@ html {
 @media (max-width: 576px) {
   .Getstartedsec h1 {
     font-size: 30px;
-  }
-}
-@media (max-width: 992px) {
-  .Getstartedsec h1 {
-    padding: 40px 0 0 0;
   }
 }
 .Getstartedsec .buyoinpara {
@@ -754,7 +734,7 @@ html {
 @media (max-width: 992px) {
   .roadmap_section {
     width: 100%;
-    height: 1000px;
+    height: 1040px;
   }
 }
 .roadmap_section h1 {
@@ -870,7 +850,7 @@ html {
   }
 }
 .roadmap_section .purchase_button {
-  padding: 100px 0 50px 0;
+  padding: 80px 0 50px 0;
 }
 .roadmap_section .purchase_button button {
   font-family: Arial, Helvetica, sans-serif;
@@ -1034,19 +1014,14 @@ html {
 }
 
 .tempfeaturepage_sec {
-  height: 650px;
   background: linear-gradient(90deg, rgba(100, 125, 238, 0.05) 0%, rgba(167, 84, 226, 0.05) 100%);
-}
-@media (max-width: 992px) {
-  .tempfeaturepage_sec {
-    height: 900px;
-  }
+  padding: 0 0 30px 0;
 }
 .tempfeaturepage_sec h1 {
   text-align: center;
   font-size: 45px;
   font-weight: 200;
-  padding: 100px 0 0 0;
+  padding: 70px 0 0 0;
 }
 @media (max-width: 576px) {
   .tempfeaturepage_sec h1 {
@@ -1331,9 +1306,9 @@ html {
   border-radius: 20px;
   background: linear-gradient(90deg, rgba(100, 125, 238, 0.05) 0%, rgba(167, 84, 226, 0.05) 100%);
 }
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .ourteam_section .team_cards .member1_card {
-    width: 300px;
+    width: 550px;
   }
 }
 .ourteam_section .team_cards .member1_card:hover + .hide {
@@ -1379,11 +1354,6 @@ html {
 @media (max-width: 576px) {
   .tabchange_sec {
     height: 1150px;
-  }
-}
-@media (max-width: 992px) {
-  .tabchange_sec {
-    padding: 150px 0 0 0;
   }
 }
 .tabchange_sec .tabchange_headings button {

@@ -45,8 +45,8 @@
             border: 2px solid rgb(125, 125, 250);
             border-radius: 20px;
             background: linear-gradient(90deg, rgba(100, 125, 238, 0.05) 0%, rgba(167, 84, 226, 0.05) 100%);
-            @include largeScreen {
-                width: 300px;
+            @include smallScreen {
+                width: 550px;
             }
             &:hover {
                 + {

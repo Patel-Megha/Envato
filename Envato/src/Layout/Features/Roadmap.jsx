@@ -15,7 +15,7 @@ const Roadmap = () => {
         </ol>
       </div>
       <div className="purchase_button">
-      <button>Purchase Now</button>
+        <button>Purchase Now</button>
       </div>
     </div>
   )

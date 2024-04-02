@@ -11,9 +11,9 @@
     @include smallScreen {
         height: 1150px;
     }
-    @include largeScreen {
-        padding: 150px 0 0 0;
-    }
+    // @include largeScreen {
+    //     padding: 150px 0 0 0;
+    // }
     .tabchange_headings {
         button {
             font-size: 20px;
