@@ -4,12 +4,6 @@ import UsdCard from '../Components/Common/UsdCard'
 const Section4 = () => {
   return (
     <div className='section4main'>
-      {/* <div className="container">
-        <a href="" className='containerlinks'>USD</a>
-        <a href="" className='containerlinks'>EUR</a>
-        <a href="" className='containerlinks'>GBP</a>
-        <a href="" className='containerlinks'>RUB</a>
-      </div> */}
       <div className="BTCsection">
         <UsdCard idx={0} />
         <UsdCard idx={1} />

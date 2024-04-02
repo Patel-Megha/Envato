@@ -1,7 +1,7 @@
 import React from 'react'
-import Getintouch from '../Layout/Contact/Getintouch'
-import Icons from '../Layout/Contact/Icons'
-import Footer from '../Components/Footer'
+import Getintouch from '../../Layout/Contact/Getintouch'
+import Icons from '../../Layout/Contact/Icons'
+import Footer from '../../Components/Footer/Footer'
 
 const Contact = () => {
   return (

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Section4 from '../../pages/Section4'
-import Content1 from '../../Components/Common/Content1'
-import Section2 from './Section2'
-import Content2 from '../../Components/Common/Content2'
+import Section4 from '../../../pages/Section4'
+import Content1 from './Content1'
+import Section2 from '../Section2'
+import Content2 from './Content2'
 
 const Tabchange = () => {
     const [activetabs, setActivetabs] = useState(0)

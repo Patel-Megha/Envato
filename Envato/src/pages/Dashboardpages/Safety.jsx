@@ -1,7 +1,7 @@
 import React from 'react'
-import Safeitspage from '../Layout/Safety/Safeitspage'
-import TempFeature from '../Layout/Safety/TempFeature'
-import Countpage from '../Layout/Safety/Countpage'
+import Safeitspage from '../../Layout/Safety/Safeitspage'
+import TempFeature from '../../Layout/Safety/TempFeature'
+import Countpage from '../../Layout/Safety/Countpage'
 
 const Safety = () => {
   return (

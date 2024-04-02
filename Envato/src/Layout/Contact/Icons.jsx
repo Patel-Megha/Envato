@@ -1,9 +1,9 @@
 import React from 'react'
-import iconeone from '../assets/activeden-light-background.png'
-import iconetwo from '../assets/audiojungle-light-background.png'
-import iconthree from '../assets/codecanyon-light-background.png'
-import iconfour from '../assets/graphicriver-light-background.png'
-import iconfive from '../assets/photodune-light-background.png'
+import iconeone from '../../assets/activeden-light-background.png'
+import iconetwo from '../../assets/audiojungle-light-background.png'
+import iconthree from '../../assets/codecanyon-light-background.png'
+import iconfour from '../../assets/graphicriver-light-background.png'
+import iconfive from '../../assets/photodune-light-background.png'
 const Icons = () => {
   return (
     <div className='icons_div'>

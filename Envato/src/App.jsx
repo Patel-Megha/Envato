@@ -1,9 +1,9 @@
 import React from 'react'
-import Home from './pages/Home'
-import Features from './pages/Features'
-import Safety from './pages/Safety'
-import Blog from './pages/Blog'
-import Contact from './pages/Contact'
+import Home from './pages/Dashboardpages/Home'
+import Features from './pages/Dashboardpages/Features'
+import Safety from './pages/Dashboardpages/Safety'
+import Blog from './pages/Dashboardpages/Blog'
+import Contact from './pages/Dashboardpages/Contact'
 const App = () => {
   return (
     <div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import waveimg from '../assets/wave (1).svg'
 const Section2 = () => {
   return (
     <div className='Section2_about'>
