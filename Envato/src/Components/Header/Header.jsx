@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import logo from '../assets/logo.svg'
-import logo2 from '../assets/logo--dark.svg'
+import logo from '../../assets/logo.svg'
+import logo2 from '../../assets/logo--dark.svg'
 import { IoMdMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 const Header = () => {

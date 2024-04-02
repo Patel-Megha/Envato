@@ -99,7 +99,7 @@
 
         @include largeScreen {
             width: 100%;
-            padding: 100px 0 0 0;
+            padding: 90px 0 0 0;
         }
         .hero_form {
             margin: auto;
@@ -112,8 +112,12 @@
             width: 450px;
             border-radius: 20px;
             line-height: 3.5rem;
+            box-shadow:
+            rgba(162, 77, 247, 0.4) 0px 5px,
+            rgba(245, 199, 228, 0.3) 0px 10px,
+            rgba(181, 153, 252, 0.2) 0px 15px;
             @include smallScreen {
-                height: 330px;
+                height: 320px;
             }
             @include largeScreen {
                 height: 320px;

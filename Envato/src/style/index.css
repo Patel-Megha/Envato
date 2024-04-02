@@ -275,7 +275,7 @@ html {
 @media (max-width: 992px) {
   .Heroseection_main .Hero_twobuycoin_ico {
     width: 100%;
-    padding: 100px 0 0 0;
+    padding: 90px 0 0 0;
   }
 }
 .Heroseection_main .Hero_twobuycoin_ico .hero_form {
@@ -289,10 +289,11 @@ html {
   width: 450px;
   border-radius: 20px;
   line-height: 3.5rem;
+  box-shadow: rgba(162, 77, 247, 0.4) 0px 5px, rgba(245, 199, 228, 0.3) 0px 10px, rgba(181, 153, 252, 0.2) 0px 15px;
 }
 @media (max-width: 576px) {
   .Heroseection_main .Hero_twobuycoin_ico .hero_form {
-    height: 330px;
+    height: 320px;
   }
 }
 @media (max-width: 992px) {
@@ -1266,6 +1267,7 @@ html {
   align-items: center;
   margin: auto;
   background: linear-gradient(90deg, rgba(100, 125, 238, 0.05) 0%, rgba(167, 84, 226, 0.05) 100%);
+  box-shadow: rgba(175, 187, 243, 0.4) 0px 5px, rgba(245, 199, 228, 0.3) 0px 10px, rgba(163, 128, 252, 0.2) 0px 15px;
 }
 .Advisorscard .advisor_name {
   font-size: 20px;
@@ -1422,9 +1424,16 @@ html {
   flex-direction: column;
   height: 250px;
   width: 250px;
-  border: 2px solid rgb(171, 171, 248);
+  border: 2px solid #647dee;
   transition: 0.4s ease;
   transition-property: color, background-color, border-color;
+  box-shadow: rgba(175, 187, 243, 0.4) 0px 5px, rgba(245, 199, 228, 0.3) 0px 10px, rgba(163, 128, 252, 0.2) 0px 15px;
+}
+.content1_sec .content_cards:nth-child(1) {
+  border-radius: 20px 0 0 20px;
+}
+.content1_sec .content_cards:last-child {
+  border-radius: 0 20px 20px 0;
 }
 @media (max-width: 992px) {
   .content1_sec .content_cards {
@@ -1804,4 +1813,70 @@ html {
 .footer_sec p {
   color: white;
   font-size: 16px;
+}
+
+.publication_section {
+  padding: 50px 0 0 0;
+}
+.publication_section h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+}
+.publication_section .publication_para {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  color: blue;
+}
+.publication_section .publication_cards {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+@media (max-width: 992px) {
+  .publication_section .publication_cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.Publishercard_section {
+  height: 400px;
+  width: 300px;
+  border: none;
+  background: linear-gradient(90deg, rgba(100, 125, 238, 0.05) 0%, rgba(167, 84, 226, 0.05) 100%);
+  border-radius: 20px;
+  box-shadow: rgba(175, 187, 243, 0.4) 0px 5px, rgba(245, 199, 228, 0.3) 0px 10px, rgba(206, 190, 247, 0.2) 0px 15px;
+}
+.Publishercard_section .img_card {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.Publishercard_section .heading_card {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Publishercard_section .desc_card {
+  padding: 0 10px 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+  font-size: 16px;
+}
+.Publishercard_section .last_sec {
+  display: flex;
+}
+.Publishercard_section .last_sec p {
+  padding: 20px 0 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(166, 165, 165);
+  font-size: 15px;
 }/*# sourceMappingURL=index.css.map */

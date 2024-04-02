@@ -5,7 +5,7 @@ import { LiaServerSolid } from "react-icons/lia";
 import { AiOutlinePieChart } from "react-icons/ai";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { HiBanknotes } from "react-icons/hi2";
-import money from "../assets/money.svg"
+
 const Buycoincard = (props) => {
     let description = [
         "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text",

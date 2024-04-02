@@ -1,7 +1,7 @@
 import React from 'react'
-import member1 from '../assets/member.png'
-import member2 from '../assets/member4.png'
-import member3 from '../assets/member5.png'
+import member1 from '../../assets/member.png'
+import member2 from '../../assets/member4.png'
+import member3 from '../../assets/member5.png'
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";

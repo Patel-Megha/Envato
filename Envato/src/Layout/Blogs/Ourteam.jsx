@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import member6 from '../assets/member6.png'
-import member3 from '../assets/member3.png'
-import member7 from '../assets/member7.png'
-import member2 from '../assets/member2.png'
+import member6 from '../../assets/member6.png'
+import member3 from '../../assets/member3.png'
+import member7 from '../../assets/member7.png'
+import member2 from '../../assets/member2.png'
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
