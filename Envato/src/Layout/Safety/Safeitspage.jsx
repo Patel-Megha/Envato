@@ -1,5 +1,5 @@
 import React from 'react'
-import Safecard from '../Components/Safecard'
+import Safecard from '../../Components/Common/Safecard'
 
 const Safeitspage = () => {
   return (

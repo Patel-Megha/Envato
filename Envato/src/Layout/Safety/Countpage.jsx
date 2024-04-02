@@ -1,5 +1,5 @@
 import React from 'react'
-import background from '../assets/section-bg3.jpg'
+import background from '../../assets/section-bg3.jpg'
 import CountUp from 'react-countup';
 const Countpage = () => {
   return (

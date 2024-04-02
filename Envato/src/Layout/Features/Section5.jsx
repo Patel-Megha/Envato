@@ -1,5 +1,5 @@
 import React from 'react'
-import Buycoincard from '../Components/Buycoincard'
+import Buycoincard from '../../Components/Common/Buycoincard'
 const Section5 = () => {
   return (
     <div className='section5main' id={"template"}>

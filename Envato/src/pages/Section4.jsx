@@ -1,5 +1,5 @@
 import React, { NavLink } from 'react'
-import UsdCard from '../Components/UsdCard'
+import UsdCard from '../Components/Common/UsdCard'
 
 const Section4 = () => {
   return (

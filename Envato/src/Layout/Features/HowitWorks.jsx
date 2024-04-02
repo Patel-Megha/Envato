@@ -1,5 +1,5 @@
 import React from 'react'
-import bg from '../assets/section-bg2.jpg'
+import bg from '../../assets/section-bg2.jpg'
 import { CiPlay1 } from "react-icons/ci";
 const HowitWorks = () => {
   return (

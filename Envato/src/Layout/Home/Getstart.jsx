@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from '../Components/Cards'
+import Cards from '../../Components/Common/Cards'
 const Getstart = () => {
   return (
     <div className='Getstartedsec'>

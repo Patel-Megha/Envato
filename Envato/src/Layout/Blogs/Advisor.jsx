@@ -1,5 +1,5 @@
 import React from 'react'
-import Advisorscard from '../Components/Advisorscard'
+import Advisorscard from '../../Components/Common/Advisorscard'
 
 const Advisor = () => {
   return (

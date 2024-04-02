@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../Layout/Header'
-import Hero from '../Layout/Hero'
+import Header from '../../Components/Header'
+import Hero from '../Hero'
 import slide from '../assets/slide.jpg'
 const Section1 = () => {
   return (

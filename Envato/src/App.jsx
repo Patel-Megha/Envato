@@ -1,43 +1,17 @@
 import React from 'react'
-import Header from './Layout/Header'
-import Section1 from './pages/Section1'
-import Section2 from './pages/Section2'
-import Getstart from './pages/Getstart'
-import Section4 from './pages/Section4'
-import Section5 from './pages/Section5'
-import Roadmap from './pages/Roadmap'
-import HowitWorks from './pages/HowitWorks'
-import Safeitspage from './pages/Safeitspage'
-import TempFeature from './pages/TempFeature'
-import Countpage from './pages/Countpage'
-import Advisor from './pages/Advisor'
-import Ourteam from './pages/Ourteam'
-import Tabchange from './pages/Tabchange'
-import Faqsec from './pages/Faqsec'
-import Getintouch from './pages/Getintouch'
-import Icons from './pages/Icons'
-import Footer from './Layout/Footer'
-
+import Home from './pages/Home'
+import Features from './pages/Features'
+import Safety from './pages/Safety'
+import Blog from './pages/Blog'
+import Contact from './pages/Contact'
 const App = () => {
   return (
     <div>
-      <Section1/>
-      <Section2/>
-      <Getstart/>
-      <Tabchange/>
-      {/* <Section4/> */}
-      <Section5/>
-      <Roadmap/>
-      <HowitWorks/>
-      <Safeitspage/>
-      <TempFeature/>
-      <Countpage/>
-      <Advisor/>
-      <Ourteam/>
-     <Faqsec/>
-     <Getintouch/>
-     <Icons/>
-     <Footer/>
+      <Home />
+      <Features />
+      <Safety />
+      <Blog/>
+      <Contact/>
     </div>
   )
 }

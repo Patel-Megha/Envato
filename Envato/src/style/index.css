@@ -326,22 +326,23 @@ html {
 }
 .Heroseection_main .Hero_twobuycoin_ico .hero_form .progressbardiv .progress_bar {
   display: flex;
-  height: 35px;
+  height: 33px;
   width: 200px;
   justify-content: center;
   text-align: center;
   background-color: #647dee;
+  border: 2px solid #647dee;
   border-radius: 20px;
   transition: width 0.6s ease;
   background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.15) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 75%, transparent 75%, transparent);
-  animation: animations 5s linear infinite;
+  animation: animations 4s linear infinite;
 }
 @keyframes animations {
   0% {
     background-position: 0 0;
   }
   100% {
-    background-position: 100px 0;
+    background-position: 100px 0px;
   }
 }
 @media (max-width: 576px) {
@@ -1504,7 +1505,7 @@ html {
 }
 .faq_section .faq_b .faq_buttons .pa {
   font-size: 17px;
-  width: 500px;
+  width: 450px;
   height: 100px;
   display: flex;
   margin: auto;
